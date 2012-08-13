@@ -1,0 +1,21 @@
+{
+  "name"        : "node.class",
+  "version"     : "1.0.0",
+  "description" : "A port of John Resig Class Implementation",
+  "keywords"    : [ "class", "extend", "mixin", "copy", "inherit", "John Resig" ],
+  "author"      : "dreamerslab <ben@dreamerslab.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "should": "1.1.0"
+  },
+  "repository"  : {
+    "type": "git",
+    "url" : "https://github.com/dreamerslab/node.class.git"
+  },
+  "main"    : "index",
+  "engines" : [ "node >= 0.4.0" ],
+  "licenses": [{
+    "type": "MIT",
+    "url" : "http://en.wikipedia.org/wiki/MIT_License"
+  }]
+}
