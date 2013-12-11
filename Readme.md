@@ -47,7 +47,7 @@ Install through npm
 
     console.log( ben.height()); // 176
 
-> Multiple inheritance
+> Inject to prototype chain
 
     var car = {
 
@@ -72,7 +72,7 @@ Install through npm
     };
 
 
-    var Porsche = Class.extend( car, sports_car );
+    var Porsche = Class.extend( car ).inject( sports_car );
 
     var nine11 = new Porsche( '911' );
 

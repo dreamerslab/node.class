@@ -1,7 +1,7 @@
 var should = require( 'should' );
 var Class  = require( '../lib/class' );
 
-var mixin = {
+var mixin_a = {
 
   a : 'a',
 
@@ -22,7 +22,12 @@ var mixin = {
   },
 };
 
+var mixin_b = {
+  b : 'whatever'
+};
+
 var what = {
+
   d : 'd',
 
   do_a : function (){
@@ -30,12 +35,12 @@ var what = {
   },
 };
 
-var Klass    = Class.extend( mixin, what );
+var Klass    = Class.inject( mixin_a, mixin_b ).extend( what );
 var instance = new Klass();
 
-
+instance.b.should.eql( 'whatever' );
 instance.d.should.eql( 'd' );
-instance.do_a().should.eql( 'ab' );
-instance.do_b().should.eql( 'b' );
+instance.do_a().should.eql( 'awhatever' );
+instance.do_b().should.eql( 'whatever' );
 
 console.log( 'All tests passed :)' );
