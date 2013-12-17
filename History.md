@@ -1,5 +1,11 @@
 # History
 
+## 1.1.4 / 2013-12-17
+
+- [bug fix] Instance issue in `inject`
+
+
+
 ## 1.1.3 / 2013-12-17
 
 - [bug fix] Scope issue in `inject`
