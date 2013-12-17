@@ -1,5 +1,11 @@
 # History
 
+## 1.1.2 / 2013-12-16
+
+- [bug fix] Added `inject` to class method in Class.extend
+
+
+
 ## 1.1.1 / 2013-12-12
 
 - [refactoring] Support `Requirejs`
